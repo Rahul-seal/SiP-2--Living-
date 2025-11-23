@@ -1,0 +1,847 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+}
+
+main {
+  position: relative;
+}
+main section:nth-child(1) {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 5.5rem;
+  background-color: rgba(46, 46, 46, 0.9019607843);
+  z-index: 2;
+}
+main section:nth-child(1) .left h2 {
+  font-style: italic;
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+main section:nth-child(1) .middle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+main section:nth-child(1) .middle a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.84);
+  font-size: 1rem;
+}
+main section:nth-child(1) .middle a i {
+  font-size: 1.2rem;
+}
+main section:nth-child(1) .right {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+main section:nth-child(1) .right a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(24, 23, 23);
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 1rem;
+}
+main section:nth-child(1) .right button {
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 2rem;
+  border: none;
+}
+main section:nth-child(1) .right button a {
+  font-size: 0.8rem;
+}
+main section:nth-child(1) .right button p {
+  font-size: 1.1rem;
+}
+main section:nth-child(2) {
+  width: 100%;
+  padding: 1rem 2rem 1rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  grid-template-areas: "left-top right-top" "left-bottom right-bottom";
+  gap: 2rem;
+}
+main section:nth-child(2) left-top {
+  grid-area: left-top;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0rem;
+}
+main section:nth-child(2) left-top h1 {
+  width: 80%;
+  font-size: 3.9rem;
+  font-weight: 600;
+}
+main section:nth-child(2) left-top h1 a {
+  text-decoration: none;
+  color: #535353;
+}
+main section:nth-child(2) left-top h1 i {
+  padding: 1rem;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+main section:nth-child(2) left-bottom {
+  grid-area: left-bottom;
+}
+main section:nth-child(2) left-bottom main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main section:nth-child(2) left-bottom main a {
+  text-decoration: none;
+  color: #888888;
+  padding: 1.2rem 1.4rem;
+  background-color: black;
+  font-size: 1.3rem;
+  border-radius: 1.5rem;
+  position: absolute;
+  right: 0;
+}
+main section:nth-child(2) left-bottom main .body {
+  width: 100%;
+  height: 100%;
+  background-image: url(./H1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+main section:nth-child(2) right-top {
+  grid-area: right-top;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem 5rem;
+  gap: 1.2rem;
+}
+main section:nth-child(2) right-top .top button {
+  padding: 0.3rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.4rem;
+}
+main section:nth-child(2) right-top .top button a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(24, 23, 23);
+  padding: 0.8rem;
+  border-radius: 50%;
+  font-size: 1rem;
+  background-image: url(./prof.jpg);
+  background-size: cover;
+}
+main section:nth-child(2) right-top .top button a {
+  font-size: 0.8rem;
+}
+main section:nth-child(2) right-top .top button p {
+  font-size: 1.1rem;
+}
+main section:nth-child(2) right-top .top button p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+main section:nth-child(2) right-top .middle {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 70%;
+}
+main section:nth-child(2) right-top .bottom {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 1.2rem;
+}
+main section:nth-child(2) right-bottom {
+  grid-area: right-bottom;
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section:nth-child(2) right-bottom .top {
+  width: 80%;
+  height: 50%;
+  background-image: url(./H2.jpg);
+  background-size: cover;
+  background-position: top;
+  border-radius: 2rem;
+}
+main section:nth-child(2) right-bottom .middle {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main section:nth-child(2) right-bottom .middle h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+main section:nth-child(2) right-bottom .middle p {
+  font-size: 1.2rem;
+  color: #888888;
+}
+main section:nth-child(2) right-bottom .middle a {
+  text-decoration: none;
+  color: #888888;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+main section:nth-child(2) right-bottom .middle a p {
+  text-decoration: underline;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+main section:nth-child(2) right-bottom .middle a i {
+  font-size: 1rem;
+}
+main section:nth-child(3) {
+  width: 100%;
+  padding: 3rem 2rem 1rem 6rem;
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "header" "main";
+}
+main section:nth-child(3) header {
+  grid-area: header;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section:nth-child(3) header .left {
+  width: 100%;
+}
+main section:nth-child(3) header .left h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 60%;
+}
+main section:nth-child(3) header .right {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section:nth-child(3) header .right .top {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+}
+main section:nth-child(3) header .right .bottom button {
+  background-color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+main section:nth-child(3) main {
+  grid-area: main;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main section:nth-child(3) main .part {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main section:nth-child(3) main .part h1 {
+  font-size: 3rem;
+  font-weight: 500;
+}
+main section:nth-child(3) main .part p {
+  font-size: 1.1rem;
+  width: 65%;
+}
+main section:nth-child(4) {
+  width: 100%;
+  padding: 3rem 2rem 1rem 6rem;
+  gap: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "header header header" "main main main" "main main main";
+}
+main section:nth-child(4) header {
+  grid-area: header;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section:nth-child(4) header .left {
+  width: 100%;
+}
+main section:nth-child(4) header .left h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 60%;
+}
+main section:nth-child(4) header .right {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section:nth-child(4) header .right .top {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+}
+main section:nth-child(4) header .right .bottom button {
+  background-color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+main section:nth-child(4) main {
+  grid-area: main;
+  padding: 1rem 2rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+main section:nth-child(4) main .part:nth-child(1) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section:nth-child(4) main .part:nth-child(1) .top {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+main section:nth-child(4) main .part:nth-child(1) .bottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 1.5rem;
+}
+main section:nth-child(4) main .part:nth-child(1) .bottom .left h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+main section:nth-child(4) main .part:nth-child(1) .bottom .right h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main section:nth-child(4) main .part:nth-child(1) .bottom .right p {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  width: 100%;
+}
+main section:nth-child(4) main .part:nth-child(1) .top {
+  background-image: url(./H3.jpg);
+}
+main section:nth-child(4) main .part:nth-child(2) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section:nth-child(4) main .part:nth-child(2) .top {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+main section:nth-child(4) main .part:nth-child(2) .bottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 1.5rem;
+}
+main section:nth-child(4) main .part:nth-child(2) .bottom .left h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+main section:nth-child(4) main .part:nth-child(2) .bottom .right h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main section:nth-child(4) main .part:nth-child(2) .bottom .right p {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  width: 100%;
+}
+main section:nth-child(4) main .part:nth-child(2) .top {
+  background-image: url(./H4.jpg);
+}
+main section:nth-child(4) main .part:nth-child(3) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section:nth-child(4) main .part:nth-child(3) .top {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+main section:nth-child(4) main .part:nth-child(3) .bottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 1.5rem;
+}
+main section:nth-child(4) main .part:nth-child(3) .bottom .left h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+main section:nth-child(4) main .part:nth-child(3) .bottom .right h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main section:nth-child(4) main .part:nth-child(3) .bottom .right p {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  width: 100%;
+}
+main section:nth-child(4) main .part:nth-child(3) .top {
+  background-image: url(./H5.jpg);
+}
+main section:nth-child(5) {
+  width: 100%;
+  padding: 3rem 2rem 1rem 6rem;
+  gap: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas: "header header header" "main main aside";
+}
+main section:nth-child(5) header {
+  grid-area: header;
+  display: flex;
+  justify-content: center;
+}
+main section:nth-child(5) header h1 {
+  width: 40%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+main section:nth-child(5) main {
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section:nth-child(5) main .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main section:nth-child(5) main .top h3 {
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main section:nth-child(5) main .top h3:nth-child(2) {
+  color: #888888;
+  font-weight: 400;
+}
+main section:nth-child(5) main .middle p {
+  font-size: 1.8rem;
+  width: 90%;
+}
+main section:nth-child(5) main .bottom {
+  display: flex;
+  gap: 1rem;
+}
+main section:nth-child(5) main .bottom button {
+  font-size: 1.4rem;
+  color: white;
+  background-color: black;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 0.5rem;
+}
+main section:nth-child(5) aside {
+  grid-area: aside;
+  display: flex;
+  justify-content: center;
+}
+main section:nth-child(5) aside .img {
+  width: 90%;
+  height: 100%;
+  background-image: url(./me.jpg);
+  background-size: cover;
+  border-radius: 2rem;
+}
+main section:nth-child(6) {
+  width: 100%;
+  padding: 3rem 2rem 1rem 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr 1.5fr;
+  grid-template-areas: "header header header" "main main main" "main main main";
+}
+main section:nth-child(6) header {
+  grid-area: header;
+  margin-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section:nth-child(6) header .left {
+  width: 100%;
+}
+main section:nth-child(6) header .left h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  width: 60%;
+}
+main section:nth-child(6) header .right {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section:nth-child(6) header .right .top {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+}
+main section:nth-child(6) header .right .bottom button {
+  background-color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+main section:nth-child(6) header .right {
+  width: 50%;
+}
+main section:nth-child(6) main {
+  grid-area: main;
+  padding: 1rem 2rem 1rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+main section:nth-child(6) main .part:nth-child(1) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section:nth-child(6) main .part:nth-child(1) .top {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 1.5rem;
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom .left h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom .right h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom .right p {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  width: 100%;
+}
+main section:nth-child(6) main .part:nth-child(1) .top {
+  background-image: url(./H6.jpg);
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom {
+  flex-direction: column;
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom .details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.9rem;
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom .details a {
+  text-decoration: none;
+  color: #888888;
+}
+main section:nth-child(6) main .part:nth-child(1) .bottom h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+main section:nth-child(6) main .part:nth-child(2) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section:nth-child(6) main .part:nth-child(2) .top {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 1.5rem;
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom .left h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom .right h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom .right p {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  width: 100%;
+}
+main section:nth-child(6) main .part:nth-child(2) .top {
+  background-image: url(./H7.jpg);
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom {
+  flex-direction: column;
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom .details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.9rem;
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom .details a {
+  text-decoration: none;
+  color: #888888;
+}
+main section:nth-child(6) main .part:nth-child(2) .bottom h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+main section:nth-child(6) main .part:nth-child(3) {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section:nth-child(6) main .part:nth-child(3) .top {
+  width: 100%;
+  height: 80%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 2rem;
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  gap: 1.5rem;
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom .left h1 {
+  font-size: 2.7rem;
+  font-weight: 500;
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom .right h2 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom .right p {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  width: 100%;
+}
+main section:nth-child(6) main .part:nth-child(3) .top {
+  background-image: url(./H8.jpg);
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom {
+  flex-direction: column;
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom .details {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1.9rem;
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom .details a {
+  text-decoration: none;
+  color: #888888;
+}
+main section:nth-child(6) main .part:nth-child(3) .bottom h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+main section:nth-child(7) {
+  width: 100%;
+  padding: 3rem 2rem 1rem 6rem;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "aside main" "aside main";
+}
+main section:nth-child(7) aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+main section:nth-child(7) aside h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+main section:nth-child(7) aside h3 {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  font-weight: 400;
+}
+main section:nth-child(7) main .content {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+main section:nth-child(7) main .content h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+main section:nth-child(7) main .content button {
+  padding: 0.6rem 0.8rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: #000;
+  color: white;
+  border: 1px solid white;
+}
+main section:nth-child(8) {
+  width: 100%;
+  padding: 3rem 2rem 1rem 6rem;
+  background-color: #fff;
+}
+main section:nth-child(8) main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 0.6fr 1.4fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "aside right-side" "footer footer";
+}
+main section:nth-child(8) main aside {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1.2rem;
+}
+main section:nth-child(8) main aside h1 {
+  color: #000;
+  width: 80%;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+main section:nth-child(8) main aside h4 {
+  font-size: 1.2rem;
+  color: #888888;
+  width: 80%;
+  font-weight: 500;
+}
+main section:nth-child(8) main aside button {
+  background-color: white;
+  padding: 0.7rem 1rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-weight: 700;
+  background-color: black;
+  color: white;
+}
+main section:nth-child(8) main right-side {
+  grid-area: right-side;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+main section:nth-child(8) main right-side ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section:nth-child(8) main right-side ul li:nth-child(1) {
+  color: black;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+main section:nth-child(8) main right-side ul li {
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+main section:nth-child(8) main footer {
+  grid-area: footer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+main section:nth-child(8) main footer img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=style.css.map */
